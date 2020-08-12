@@ -1,0 +1,15 @@
+.DS_STORE
+node_modules
+dist
+.module-cache
+.ftppass
+*.log*
+
+api/config.json
+api/storage
+api/cache
+api/vendor
+api/App/template.dist.php
+
+cache
+storage

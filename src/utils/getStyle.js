@@ -1,0 +1,55 @@
+
+import store from '../store'
+import variables from '../style.yaml'
+
+let loaded = false
+let restyled = false
+export let style = {
+  ...variables
+}
+
+export default function getStyle() {
+  if (loaded) return style
+
+  const { data } = store.getState()
+
+  if (data.style) {
+    loaded = true
+
+    style = {
+      ...variables,
+      ...data.style.content
+    }
+  }
+
+  return style
+}
+
+export function restyle() {
+  if (restyled) return
+  restyled = true
+
+  let ss = document.getElementById('stylesheet')
+  if (! ss) return
+
+  let href = ss.getAttribute('href')
+
+  fetch(href)
+    .then(response => response.text())
+    .then(function(data) {
+      let css = data
+
+      for (let k in style) {
+        let prop = '$' + k
+
+        while (css.indexOf(prop) !== -1) {
+          css = css.replace(prop, style[k])
+        }
+      }
+
+      let tag = document.createElement('style')
+      tag.setAttribute('id', 'dst')
+      tag.innerHTML = css
+      document.getElementsByTagName('head')[0].appendChild(tag)
+    })
+}

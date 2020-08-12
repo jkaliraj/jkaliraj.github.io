@@ -1,0 +1,97 @@
+
+.nav {
+  composes: clear from '../../assets/css/grid.css';
+  position: relative;
+}
+
+.nav ul,
+.nav li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+  position: relative;
+}
+
+.nav li {
+  float: left;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.nav a {
+  position: relative;
+  display: block;
+  color: $color_main;
+  text-decoration: none;
+  padding: 20px 15px;
+  text-transform: uppercase;
+  transition: color 170ms ease;
+  font-size: 20px;
+  line-height: 1em;
+  font-weight: 700;
+}
+
+.nav a:hover,
+.nav .pageActive a {
+  color: $nav_color_active;
+}
+
+.navInner {
+  position: relative;
+  float: left;
+
+  transition: all 170ms ease-out-quint;
+  transform: scale(0, 1);
+  transform-origin: 100% 0;
+}
+
+.nav.active .navInner {
+  transform: scale(1, 1);
+  pointer-events: auto;
+}
+
+.burger {
+  width: 80px;
+  height: 80px;
+  float: right;
+  position: relative;
+  cursor: pointer;
+  margin-right: -25px;
+  margin-top: -12px;
+  pointer-events: auto;
+}
+
+@media screen and (max-width: 800px) {
+  .burger {
+    right: 5vw;
+    top: 5vw;
+    z-index: 10;
+    position: absolute;
+    float: none;
+  }
+
+  .navInner {
+    float: none;
+    height: 100vh;
+    background: $color_main;
+    padding-top: 75px;
+  }
+
+  .nav a {
+    color: $background_main;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .nav ul {
+    padding-top: 5vw;
+  }
+
+  .nav li {
+    display: block;
+    float: none;
+    overflow: visible;
+  }
+}

@@ -1,0 +1,23 @@
+
+.main {
+  position: relative;
+  z-index: 2;
+}
+
+.mainWrapper {
+  position: relative;
+  padding-top: 24vh;
+  padding-bottom: 11vw;
+  font-size: responsive 10px 25px;
+  font-range: 420px 1600px;
+}
+
+.hasPoster .mainWrapper {
+  padding-top: 50vh;
+}
+
+.mainWrapperInner {
+  font-size: $font_size;
+  font-weight: $font_weight;
+  line-height: $line_height;
+}

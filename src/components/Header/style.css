@@ -1,0 +1,107 @@
+
+.header {
+  position: fixed;
+  top: 6vw;
+  left: 0;
+  width: 100%;
+  height: 0;
+  z-index: 20;
+  pointer-events: none;
+}
+
+@media screen and (max-width: 1025px) {
+  .header {
+    top: 5vw;
+  }
+}
+
+.header .nav {
+  float: right;
+  position: relative;
+  margin-top: -13px;
+  margin-left: 0;
+}
+
+.logo {
+  position: relative;
+  margin: auto;
+  float: left;
+  opacity: 0.85;
+  transition: opacity 170ms ease;
+  margin-top: -20px;
+  margin-left: -20px;
+  pointer-events: auto;
+}
+
+.logo a {
+  display: block;
+}
+
+.logo img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin: 0;
+  width: 25px;
+  height: 26px;
+  padding: 20px;
+}
+
+.logo:hover {
+  opacity: 1;
+}
+
+.logoWrap {
+  position: relative;
+}
+
+.logoDefault {
+  opacity: 1;
+  transition: opacity 711ms ease-out-quint;
+}
+
+.logoActive {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 400ms ease-out-quint;
+}
+
+.logoInverse {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 711ms ease-out-quint;
+}
+
+.logo:hover .logoActive {
+  opacity: 1;
+}
+
+:global(body.inverse) .logoDefault {
+  opacity: 0;
+}
+
+:global(body.inverse) .logoInverse {
+  opacity: 1;
+}
+
+@media screen and (max-width: 800px) {
+  .header {
+    top: 0;
+  }
+
+  .headerInner {
+    max-width: none;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .logo {
+    left: 5vw;
+    top: 5vw;
+  }
+}

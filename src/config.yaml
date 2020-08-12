@@ -1,0 +1,23 @@
+index: "home"
+site_title: "Kaliraj | Software Developer"
+site_keywords: ""
+site_description: ""
+
+poster_height: 90
+poster_scale: 0
+poster_parallax: 0.5
+poster_move: 0
+poster_blur: 0.1
+poster_fixed: true
+poster_fade: 1
+poster_image_opacity: 1
+poster_vignette: true
+poster_gradient: true
+
+links:
+  - title: "GitHub"
+    link: "https://github.com/jkaliraj"
+  - title: "LinkedIn"
+    link: "https://linkedin.com/in/jkaliraj"
+  - title: "Email"
+    link: "mailto:kaliraj.jeganathan@gmail.com"

@@ -1,0 +1,74 @@
+
+html,
+body {
+  margin: 0;
+}
+
+hr {
+  outline: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input,
+textarea,
+select,
+button {
+  border: none;
+  outline: none;
+  background: none;
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  width: auto\9;
+  height: auto;
+
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+
+label {
+  cursor: pointer;
+}
+
+*:focus {
+  outline: none;
+}
+
+html,
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  -webkit-text-rendering: optimizeLegibility;
+  -moz-text-rendering: optimizeLegibility;
+  -ms-text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility;
+}
+
+@-webkit-viewport { width: device-width }
+@-moz-viewport    { width: device-width }
+@-ms-viewport     { width: device-width }
+@-o-viewport      { width: device-width }
+@viewport         { width: device-width }

@@ -1,0 +1,28 @@
+
+.list {
+  position: relative;
+  margin-bottom: 10vw;
+}
+
+.list ul,
+.list li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: block;
+  position: relative;
+}
+
+.list a {
+  display: block;
+  position: relative;
+}
+
+.twocol li {
+  float: left;
+  width: 50%;
+}
+
+.twocol li a {
+  height: 100%;
+}

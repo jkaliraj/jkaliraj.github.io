@@ -1,0 +1,64 @@
+
+.links {
+  position: relative;
+  font-size: 0.5em;
+}
+
+.links ul,
+.links li {
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.links ul {
+  margin-left: -0.5em;
+  margin-top: 2em;
+  margin-bottom: -0.5em;
+}
+
+.links li {
+  float: left;
+}
+
+.links li a {
+  display: block;
+  padding: 0.4em;
+  position: relative;
+}
+
+.linkText {
+  display: inline-block;
+  position: relative;
+}
+
+.linkText:before,
+.linkText:after {
+  position: absolute;
+  content: ' ';
+  bottom: -0.25vw;
+  left: 0;
+  width: 100%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-bottom: 0.25vw solid $color_main;
+  transition: border 170ms ease;
+}
+
+.linkText:before {
+  z-index: 2;
+  opacity: 1;
+  width: 0;
+  transition: border 170ms ease, width 340ms ease-out-quart;
+}
+
+.links li a:hover .linkText:before {
+  border-color: $color_active;
+  width: 100%;
+}
+
+:global(body.inverse) .linkText:before,
+:global(body.inverse) .linkText:after {
+  border-color: $background_main;
+}

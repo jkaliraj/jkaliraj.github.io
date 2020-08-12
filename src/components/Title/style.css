@@ -1,0 +1,42 @@
+
+.text {
+  position: relative;
+  padding-bottom: $title_spacing;
+  margin-top: -1em !important;
+}
+
+.hasPoster {
+  padding-bottom: $title_spacing;
+}
+
+.text span {
+  display: inline-block;
+  margin: 0 !important;
+}
+
+.text a {
+  color: $color_active;
+  text-decoration: none;
+}
+
+.text a:hover {
+  color: $color_main;
+}
+
+.title,
+.subtitle {
+  margin: 0;
+  display: block;
+  line-height: $line_height;
+}
+
+.title {
+  color: $color_active;
+  font-size: $title_h1_font_size;
+  font-weight: $title_h1_font_weight;
+}
+
+.subtitle {
+  font-size: $title_h2_font_size;
+  font-weight: $title_h2_font_weight;
+}

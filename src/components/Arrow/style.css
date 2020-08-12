@@ -1,0 +1,111 @@
+
+.arrow {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.arrowInner {
+  display: block;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  transform: translate(-50%, -50%);
+}
+
+.line {
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background: $color_main;
+  transition: all 170ms ease;
+}
+
+:global(body.inverse) .line {
+  background: $background_main;
+}
+
+.arrow:hover .line {
+  background: $color_active;
+}
+
+.line.first {
+  top: 50%;
+  left: 50%;
+  transform: rotate(45deg) translate(-50%, -50%);
+  transform-origin: 50% 50%;
+}
+
+.line.second {
+  top: 50%;
+  left: 50%;
+  transform: rotate(-45deg) translate(-50%, -50%);
+  transform-origin: 50% 50%;
+}
+
+.top .arrowInner {
+  transform: rotate(-90deg);
+}
+
+.right .arrowInner {
+  transform: rotate(0deg);
+}
+
+.left .arrowInner {
+  transform: rotate(180deg);
+}
+
+.left .line,
+.right .line {
+  width: 15px;
+}
+
+.bottom .arrowInner {
+  transform: rotate(90deg);
+}
+
+.menu .line {
+  transform: rotate(0deg) translate(-50%, -50%);
+  transform-origin: 0% 0%;
+  transition: transform 340ms ease-out-quint, margin-top 340ms ease-out-quint, background 200ms ease;
+}
+
+.menu .line.first {
+  margin-top: -5px;
+}
+
+.menu .line.second {
+  margin-top: 5px;
+}
+
+.menu:hover .line {
+  transition: transform 340ms ease-out-quint, margin-top 340ms ease-out-quint, top 340ms ease-out-quint, background 200ms ease;
+}
+
+.menu:hover .line.first {
+  top: 10px;
+}
+
+.menu:hover .line.second {
+  top: -10px;
+}
+
+.menu.active .line {
+  top: 50% !important;
+  background: $color_active;
+  transition: transform 340ms ease-out-quint, top 340ms ease-out-quint, margin-top 340ms ease-out-quint, background 200ms ease;
+}
+
+.menu.active .line.first {
+  transform: rotate(225deg) translate(-50%, -50%);
+  margin-top: 0;
+}
+
+.menu.active .line.second {
+  transform: rotate(-225deg) translate(-50%, -50%);
+  margin-top: 0;
+}

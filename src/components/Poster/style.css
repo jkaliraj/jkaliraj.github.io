@@ -1,0 +1,93 @@
+
+.poster {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  transition: opacity 170ms ease-out-quint, top 170ms ease-out-quint, transform 170ms ease-out-quint;
+  will-change: opacity, top, -webkit-transform, transform;
+
+  backface-visibility: hidden;
+  transform: translate3d(0, 0, -1px);
+  transform-style: preserve-3d;
+}
+
+.poster.fixed {
+  position: fixed;
+}
+
+.poster.vignette:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  content: " ";
+  display: block;
+  box-shadow: inset 0 0 20vmax #000;
+}
+
+.poster .image {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.poster.loaded .image {
+  transition: all 170ms ease-out-quint;
+  will-change: background-position, -webkit-filter, opacity, -webkit-transform, -moz-transform, transform;
+
+  backface-visibility: hidden;
+  transform: translate3d(0, 0, 1px);
+  transform-style: preserve-3d;
+}
+
+.poster.scrolled {
+  z-index: 1;
+}
+
+.poster .image img {
+  opacity: 0;
+  pointer-events: none;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.poster .gradient {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 3;
+  width: 100%;
+  height: 30%;
+  min-height: 75px;
+  max-height: 300px;
+
+  background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, $background_main 95%, $background_main 100%);
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%, $background_main 95%, $background_main 100%);
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, $background_main 95%, $background_main 100%);
+}
+
+.poster.touch {
+  position: absolute !important;
+  opacity: 1 !important;
+}
+
+.poster.touch .image {
+  -webkit-filter: none !important;
+}
