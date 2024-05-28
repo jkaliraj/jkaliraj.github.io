@@ -5,7 +5,7 @@ import { Link } from 'react-router'
 import Arrow from '../Arrow'
 
 import classnames from 'classnames'
-import style from './style.css'
+import style from './style.module.css'
 import store from '../../store'
 import { rollText } from '../../utils/transformText'
 
@@ -16,8 +16,8 @@ class Navigation extends Component {
 
   componentDidMount() {
     this._justClicked = false
-    window.addEventListener('closeNavigation', (this._handleCloseNavigation = ::this.handleCloseNavigation))
-    document.body.addEventListener('click', (this._handleBodyClick = ::this.handleBodyClick))
+    window.addEventListener('closeNavigation', (this._handleCloseNavigation = this.handleCloseNavigation.bind(this)))
+    document.body.addEventListener('click', (this._handleBodyClick = this.handleBodyClick.bind(this)))
   }
 
   componentWillUnmount() {
@@ -26,7 +26,7 @@ class Navigation extends Component {
   }
 
   handleCloseNavigation() {
-    setTimeout(::this.checkIfCanClose, 17)
+    setTimeout(this.checkIfCanClose.bind(this), 17)
   }
 
   handleBodyClick(event) {
@@ -41,7 +41,7 @@ class Navigation extends Component {
 
   clicked() {
     this._justClicked = true
-    setTimeout(::this.unlock, 170)
+    setTimeout(this.unlock.bind(this), 170)
   }
 
   unlock() {
@@ -54,8 +54,8 @@ class Navigation extends Component {
     )
 
     return (
-      <li key={page.id} className={classes} onClick={::this.handleClick}>
-        <Link to={page.link} onMouseOver={::this.cycle} data-text={page.title}>
+      <li key={page.id} className={classes} onClick={this.handleClick.bind(this)}>
+        <Link to={page.link} onMouseOver={this.cycle.bind(this)} data-text={page.title}>
           {page.title}
         </Link>
       </li>
@@ -129,12 +129,12 @@ class Navigation extends Component {
 
     return (
       <nav ref="nav" id="nav" className={classes}>
-        <div className={style.burger} onClick={::this.handleBurgerClick}>
+        <div className={style.burger} onClick={this.handleBurgerClick.bind(this)}>
           <Arrow ref="burger" menu />
         </div>
         <div className={style.navInner}>
           <ul>
-            {pages.map(::this.renderPageItem)}
+            {pages.map(this.renderPageItem.bind(this))}
           </ul>
         </div>
       </nav>

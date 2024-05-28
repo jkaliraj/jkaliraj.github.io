@@ -2,7 +2,7 @@
 import React, { Component } from 'react'
 
 import classnames from 'classnames'
-import style from './item.css'
+import style from './item.module.css'
 
 import imagepath from '../../utils/imagepath'
 
@@ -38,7 +38,7 @@ class Item extends Component {
 
     return (
       <div {...rest} className={classes}>
-        <img src={path} onLoad={::this.loaded} />
+        <img src={path} onLoad={this.loaded.bind(this)} />
         <div className={style.preview}>
           <div className={style.previewImage} style={imageCss}>
           </div>

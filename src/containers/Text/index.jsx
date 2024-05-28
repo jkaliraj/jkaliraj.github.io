@@ -4,8 +4,8 @@ import ReactMarkdown from 'react-markdown'
 import classnames from 'classnames'
 
 import markdown from '../../utils/markdown'
-import style from './style.css'
-import grid from '../../assets/css/grid.css'
+import style from './style.module.css'
+import grid from '../../assets/css/grid.module.css'
 
 import { rollText } from '../../utils/transformText'
 

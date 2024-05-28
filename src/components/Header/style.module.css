@@ -58,7 +58,7 @@
 
 .logoDefault {
   opacity: 1;
-  transition: opacity 711ms ease-out-quint;
+  transition: opacity 711ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .logoActive {
@@ -66,7 +66,7 @@
   top: 0;
   left: 0;
   opacity: 0;
-  transition: opacity 400ms ease-out-quint;
+  transition: opacity 400ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .logoInverse {
@@ -74,7 +74,7 @@
   top: 0;
   left: 0;
   opacity: 0;
-  transition: opacity 711ms ease-out-quint;
+  transition: opacity 711ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .logo:hover .logoActive {

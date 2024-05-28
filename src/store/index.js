@@ -20,9 +20,9 @@ export function configure(initialState) {
 
   const store = createStoreWithMiddleware(rootReducer, initialState)
 
-  if (module.hot) {
-    module.hot.accept('../reducers', () => {
-      const nextReducer = require('../reducers')
+  if (import.meta.hot) {
+    import.meta.hot.accept('../reducers', (newModule) => {
+      const nextReducer = newModule.default
       store.replaceReducer(nextReducer)
     })
   }

@@ -1,11 +1,11 @@
 
-import TweenLite from 'gsap'
-import TextPlugin from '../../node_modules/gsap/src/uncompressed/plugins/TextPlugin'
+import { TweenLite } from 'gsap'
+import 'gsap/TextPlugin'
 import shuffle from './shuffle'
 
 export default function transformText(node, text) {
   try {
-    TweenLite.to(node, 0.9, {text: text, ease: Quint.easeOut, overwrite: 'all'})
+    TweenLite.to(node, 0.9, {text: text, ease: 'quint.out', overwrite: 'all'})
   } catch(e) {}
 }
 
@@ -31,8 +31,8 @@ export function rollText(node) {
   try {
     let duration = tmpText.length * 0.01
 
-    TweenLite.to(node, duration, {text: tmpText, ease: Linear.easeNone, overwrite: 'all', onComplete: function() {
-      TweenLite.to(node, duration, {text: originalText, ease: Linear.easeNone, overwrite: 'all', onComplete: function() {
+    TweenLite.to(node, duration, {text: tmpText, ease: 'linear.none', overwrite: 'all', onComplete: function() {
+      TweenLite.to(node, duration, {text: originalText, ease: 'linear.none', overwrite: 'all', onComplete: function() {
         node.style.width = ''
         node.style.textAlign = ''
         node._isRollingText = false

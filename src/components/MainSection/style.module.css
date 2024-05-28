@@ -8,8 +8,7 @@
   position: relative;
   padding-top: 24vh;
   padding-bottom: 11vw;
-  font-size: responsive 10px 25px;
-  font-range: 420px 1600px;
+  font-size: 25px;
 }
 
 .hasPoster .mainWrapper {
@@ -17,7 +16,19 @@
 }
 
 .mainWrapperInner {
-  font-size: $font_size;
+  font-size: 70px;
   font-weight: $font_weight;
   line-height: $line_height;
+}
+
+@media screen and (max-width: 768px) {
+  .mainWrapperInner {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .mainWrapperInner {
+    font-size: 28px;
+  }
 }

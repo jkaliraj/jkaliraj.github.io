@@ -1,7 +1,7 @@
 
 import React, { Component } from 'react'
-import style from './style.css'
-import grid from '../../assets/css/grid.css'
+import style from './style.module.css'
+import grid from '../../assets/css/grid.module.css'
 import classnames from 'classnames'
 
 import Links from '../Links'
@@ -28,7 +28,7 @@ class Footer extends Component {
 
   nextCycle() {
     if (this._cycleTimeout) clearTimeout(this._cycleTimeout)
-    this._cycleTimeout = setTimeout(::this.cycle, 3500 + Math.random() * 900)
+    this._cycleTimeout = setTimeout(this.cycle.bind(this), 3500 + Math.random() * 900)
   }
 
   cycle() {

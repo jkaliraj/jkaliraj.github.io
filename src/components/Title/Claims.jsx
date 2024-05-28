@@ -25,15 +25,15 @@ class Claims extends Component {
 
   nextCycle(longDelay) {
     if (this._cycleTimeout) clearTimeout(this._cycleTimeout)
-    this._cycleTimeout = setTimeout(::this.cycle, (longDelay ? 4500 : 2500) + Math.random() * 900)
+    this._cycleTimeout = setTimeout(this.cycle.bind(this), (longDelay ? 4500 : 2500) + Math.random() * 900)
   }
 
   cycle() {
     this.nextCycle()
 
-    setTimeout(::this.cycle1, 17 + Math.random() * 1100)
-    setTimeout(::this.cycle2, 600 + Math.random() * 1100)
-    setTimeout(::this.cycle3, 900 + Math.random() * 1100)
+    setTimeout(this.cycle1.bind(this), 17 + Math.random() * 1100)
+    setTimeout(this.cycle2.bind(this), 600 + Math.random() * 1100)
+    setTimeout(this.cycle3.bind(this), 900 + Math.random() * 1100)
   }
 
   cycle1() {

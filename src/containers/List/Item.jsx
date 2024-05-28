@@ -2,8 +2,8 @@
 import React, { Component } from 'react'
 import classnames from 'classnames'
 
-import style from './item.css'
-import grid from '../../assets/css/grid.css'
+import style from './item.module.css'
+import grid from '../../assets/css/grid.module.css'
 
 import imagepath, { fetch } from '../../utils/imagepath'
 
@@ -13,8 +13,8 @@ class Item extends Component {
   };
 
   componentDidMount() {
-    window.addEventListener('resize', (this._handleResize = ::this.handleResize))
-    this._setSizeTimeout = setTimeout(::this.setSize, 170)
+    window.addEventListener('resize', (this._handleResize = this.handleResize.bind(this)))
+    this._setSizeTimeout = setTimeout(this.setSize.bind(this), 170)
   }
 
   componentWillUnmount() {
@@ -24,13 +24,13 @@ class Item extends Component {
 
   handleResize() {
     if (! this._setSizeTimeout) {
-      this._setSizeTimeout = setTimeout(::this.setSize, 170)
+      this._setSizeTimeout = setTimeout(this.setSize.bind(this), 170)
     }
   }
 
   handleLoad() {
     if (! this._setSizeTimeout) {
-      this._setSizeTimeout = setTimeout(::this.setSize, 170)
+      this._setSizeTimeout = setTimeout(this.setSize.bind(this), 170)
     }
   }
 
@@ -71,7 +71,7 @@ class Item extends Component {
     )
 
     return (
-      <article ref="node" className={classes} onMouseOver={::this.setSize}>
+      <article ref="node" className={classes} onMouseOver={this.setSize.bind(this)}>
         <header className={style.itemText}>
           <div className={classnames(grid.container, grid.shortContainer, style.itemInner)}>
             <h2 className={style.itemSubTitle}>{page.category}</h2>
@@ -81,7 +81,7 @@ class Item extends Component {
         <div className={style.preview}>
           <div className={style.previewWrap}>
             <div ref="image" className={style.previewImage} style={imageCss}>
-              <img src={path} onLoad={::this.handleLoad} />
+              <img src={path} onLoad={this.handleLoad.bind(this)} />
             </div>
           </div>
         </div>

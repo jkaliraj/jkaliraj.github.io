@@ -122,7 +122,7 @@ export default {
     pixels: {
       config: {
         content: {
-          title: "Projects",
+          title: "Pixels",
           link: "/pixels",
           navigation: true,
           template: "list",
@@ -133,66 +133,66 @@ export default {
         content: "",
         rev: "pixels-001",
       },
-      "e-commerce-platform": {
-        path: "e-commerce-platform",
+      "mountain-landscape": {
+        path: "mountain-landscape",
         config: {
           content: {
-            title: "E-Commerce Platform",
-            link: "/pixels/e-commerce-platform",
-            category: "Full Stack",
+            title: "Mountain Landscape",
+            link: "/pixels/mountain-landscape",
+            category: "Landscape",
             preview: "preview",
             template: "collection",
           },
         },
         preview: {
           localFile:
-            "https://placehold.co/1200x800/b3a577/181818?text=E-Commerce+Platform",
+            "https://placehold.co/1200x800/b3a577/181818?text=Mountain+Landscape",
         },
         index: {
           content:
-            "# E-Commerce Platform\n\nA modern full-stack e-commerce solution built with React, Node.js, and MongoDB. Features include user authentication, product management, shopping cart, payment integration, and admin dashboard.\n\n**Tech Stack:** React, Redux, Node.js, Express, MongoDB, Stripe API\n\n**Key Features:**\n- Responsive design with modern UI\n- Secure payment processing\n- Real-time inventory management\n- Admin panel for product management",
-          rev: "e-commerce-platform-001",
+            "# Mountain Landscape\n\nCaptured in the Swiss Alps during golden hour.",
+          rev: "mountain-landscape-001",
         },
       },
-      "task-management-app": {
-        path: "task-management-app",
+      "urban-architecture": {
+        path: "urban-architecture",
         config: {
           content: {
-            title: "Task Management App",
-            link: "/pixels/task-management-app",
-            category: "Web Application",
+            title: "Urban Architecture",
+            link: "/pixels/urban-architecture",
+            category: "Architecture",
             preview: "preview",
             template: "collection",
           },
         },
         preview: {
           localFile:
-            "https://placehold.co/1200x800/b3a577/181818?text=Task+Management+App",
+            "https://placehold.co/1200x800/b3a577/181818?text=Urban+Architecture",
         },
         index: {
           content:
-            "# Task Management App\n\nA collaborative task management application with real-time updates. Built with React and Firebase for seamless team collaboration.\n\n**Tech Stack:** React, Firebase, Material-UI\n\n**Key Features:**\n- Real-time collaboration\n- Drag-and-drop task organization\n- Team workspace management\n- File attachments and comments\n- Progress tracking and analytics",
-          rev: "task-management-app-001",
+            "# Urban Architecture\n\nModern architecture in downtown Vienna.",
+          rev: "urban-architecture-001",
         },
       },
-      "ai-chatbot": {
-        path: "ai-chatbot",
+      "street-photography": {
+        path: "street-photography",
         config: {
           content: {
-            title: "AI Chatbot Assistant",
-            link: "/pixels/ai-chatbot",
-            category: "AI/ML",
+            title: "Street Photography",
+            link: "/pixels/street-photography",
+            category: "Street",
             preview: "preview",
             template: "collection",
           },
         },
         preview: {
           localFile:
-            "https://placehold.co/1200x800/b3a577/181818?text=AI+Chatbot",
+            "https://placehold.co/1200x800/b3a577/181818?text=Street+Photography",
         },
         index: {
-          content: "# AI Chatbot Assistant\n\nAn intelligent chatbot powered by natural language processing and machine learning. Provides automated customer support with context-aware responses.\n\n**Tech Stack:** Python, FastAPI, OpenAI API, React\n\n**Key Features:**\n- Natural language understanding\n- Context-aware conversations\n- Multi-language support\n- Integration with existing systems\n- Analytics dashboard for insights",
-          rev: "ai-chatbot-001",
+          content: "# Street Photography\n\nLife on the streets of Berlin.",
+          rev: "street-photography-001",
         },
       },
     },
@@ -227,17 +227,17 @@ export default {
       localFile:
         "https://placehold.co/800x600/b3a577/181818?text=Animation+Demo",
     },
-    "/pixels/e-commerce-platform/preview": {
+    "/pixels/mountain-landscape/preview": {
       localFile:
-        "https://placehold.co/1200x800/b3a577/181818?text=E-Commerce+Platform",
+        "https://placehold.co/1200x800/b3a577/181818?text=Mountain+Landscape",
     },
-    "/pixels/task-management-app/preview": {
+    "/pixels/urban-architecture/preview": {
       localFile:
-        "https://placehold.co/1200x800/b3a577/181818?text=Task+Management+App",
+        "https://placehold.co/1200x800/b3a577/181818?text=Urban+Architecture",
     },
-    "/pixels/ai-chatbot/preview": {
+    "/pixels/street-photography/preview": {
       localFile:
-        "https://placehold.co/1200x800/b3a577/181818?text=AI+Chatbot",
+        "https://placehold.co/1200x800/b3a577/181818?text=Street+Photography",
     },
   },
 };

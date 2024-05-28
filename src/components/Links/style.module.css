@@ -50,7 +50,7 @@
   z-index: 2;
   opacity: 1;
   width: 0;
-  transition: border 170ms ease, width 340ms ease-out-quart;
+  transition: border 170ms ease, width 340ms cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .links li a:hover .linkText:before {

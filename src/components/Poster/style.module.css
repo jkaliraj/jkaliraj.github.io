@@ -9,7 +9,7 @@
   overflow: hidden;
   margin: 0;
   padding: 0;
-  transition: opacity 170ms ease-out-quint, top 170ms ease-out-quint, transform 170ms ease-out-quint;
+  transition: opacity 170ms cubic-bezier(0.23, 1, 0.32, 1), top 170ms cubic-bezier(0.23, 1, 0.32, 1), transform 170ms cubic-bezier(0.23, 1, 0.32, 1);
   will-change: opacity, top, -webkit-transform, transform;
 
   backface-visibility: hidden;
@@ -46,7 +46,7 @@
 }
 
 .poster.loaded .image {
-  transition: all 170ms ease-out-quint;
+  transition: all 170ms cubic-bezier(0.23, 1, 0.32, 1);
   will-change: background-position, -webkit-filter, opacity, -webkit-transform, -moz-transform, transform;
 
   backface-visibility: hidden;

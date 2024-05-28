@@ -2,7 +2,7 @@
 import React, { Component } from 'react'
 
 import classnames from 'classnames'
-import style from './style.css'
+import style from './style.module.css'
 
 class Arrow extends Component {
   state = {

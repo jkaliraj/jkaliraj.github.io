@@ -4,8 +4,8 @@ import { Link } from 'react-router'
 
 import classnames from 'classnames'
 
-import style from './style.css'
-import grid from '../../assets/css/grid.css'
+import style from './style.module.css'
+import grid from '../../assets/css/grid.module.css'
 
 import Masonry from 'react-masonry-component'
 
@@ -17,7 +17,7 @@ import imagepath from '../../utils/imagepath'
 
 const masonryOptions = {
   gutter: 10,
-  transitionDuration: 0
+  transitionDuration: 300
 }
 
 class Collection extends Component {
@@ -30,12 +30,12 @@ class Collection extends Component {
   renderImage(image) {
     return (
       <Item
-        onReady={::this.nextImage}
+        onReady={this.nextImage.bind(this)}
         data-index={image.index}
         key={image.id}
         image={image}
         data={this.props.data}
-        onClick={::this.openLightbox} />
+        onClick={this.openLightbox.bind(this)} />
     )
   }
 
@@ -98,7 +98,7 @@ class Collection extends Component {
         <Text data={data} />
         <div className={classnames(grid.container, grid.shortContainer, style.collectionInner)}>
           <Masonry className={style.masonry} options={masonryOptions}>
-            {images.map(::this.renderImage)}
+            {images.map(this.renderImage.bind(this))}
           </Masonry>
         </div>
         <Lightbox
@@ -106,9 +106,9 @@ class Collection extends Component {
           width={1900}
           images={lightboxImages}
           isOpen={this.state.lightboxIsOpen}
-          onClickPrev={::this.gotoPrevious}
-          onClickNext={::this.gotoNext}
-          onClose={::this.closeLightbox}
+          onClickPrev={this.gotoPrevious.bind(this)}
+          onClickNext={this.gotoNext.bind(this)}
+          onClose={this.closeLightbox.bind(this)}
           backdropClosesModal={true} />
       </section>
     )

@@ -8,7 +8,7 @@
 }
 
 .text * + * {
-  margin-top: $line_heightem;
+  margin-top: 1.1em;
 }
 
 .text h1 {

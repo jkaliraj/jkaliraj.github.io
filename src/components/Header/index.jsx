@@ -5,9 +5,9 @@ import { Link } from 'react-router'
 import classnames from 'classnames'
 
 import Navigation from '../Navigation'
-import style from './style.css'
+import style from './style.module.css'
 import store from '../../store'
-import grid from '../../assets/css/grid.css'
+import grid from '../../assets/css/grid.module.css'
 import imagepath from '../../utils/imagepath'
 
 class Header extends Component {

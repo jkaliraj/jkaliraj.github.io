@@ -3,8 +3,8 @@ import React, { Component } from 'react'
 import { Link } from 'react-router'
 import classnames from 'classnames'
 
-import grid from '../../assets/css/grid.css'
-import style from './style.css'
+import grid from '../../assets/css/grid.module.css'
+import style from './style.module.css'
 import Item from './Item'
 import Text from '../Text'
 
@@ -14,8 +14,8 @@ class List extends Component {
   };
 
   componentDidMount() {
-    window.addEventListener('resize', (this._handleResize = ::this.handleResize))
-    this._setSizeTimeout = setTimeout(::this.handleResize, 170)
+    window.addEventListener('resize', (this._handleResize = this.handleResize.bind(this)))
+    this._setSizeTimeout = setTimeout(this.handleResize.bind(this), 170)
   }
 
   componentWillUnmount() {
@@ -96,7 +96,7 @@ class List extends Component {
         <Text data={data} />
         <div className={style.listInner}>
           <ul ref="list" className={grid.clear}>
-            {pages.map(::this.renderPageItem)}
+            {pages.map(this.renderPageItem.bind(this))}
           </ul>
         </div>
       </section>

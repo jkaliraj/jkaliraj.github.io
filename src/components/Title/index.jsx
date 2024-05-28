@@ -3,8 +3,8 @@ import React, { Component } from 'react'
 import classnames from 'classnames'
 
 import Claims from './Claims'
-import style from './style.css'
-import grid from '../../assets/css/grid.css'
+import style from './style.module.css'
+import grid from '../../assets/css/grid.module.css'
 
 class Title extends Component {
   render() {

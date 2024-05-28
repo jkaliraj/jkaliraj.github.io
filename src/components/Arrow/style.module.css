@@ -71,7 +71,7 @@
 .menu .line {
   transform: rotate(0deg) translate(-50%, -50%);
   transform-origin: 0% 0%;
-  transition: transform 340ms ease-out-quint, margin-top 340ms ease-out-quint, background 200ms ease;
+  transition: transform 340ms cubic-bezier(0.23, 1, 0.32, 1), margin-top 340ms cubic-bezier(0.23, 1, 0.32, 1), background 200ms ease;
 }
 
 .menu .line.first {
@@ -83,7 +83,7 @@
 }
 
 .menu:hover .line {
-  transition: transform 340ms ease-out-quint, margin-top 340ms ease-out-quint, top 340ms ease-out-quint, background 200ms ease;
+  transition: transform 340ms cubic-bezier(0.23, 1, 0.32, 1), margin-top 340ms cubic-bezier(0.23, 1, 0.32, 1), top 340ms cubic-bezier(0.23, 1, 0.32, 1), background 200ms ease;
 }
 
 .menu:hover .line.first {
@@ -97,7 +97,7 @@
 .menu.active .line {
   top: 50% !important;
   background: $color_active;
-  transition: transform 340ms ease-out-quint, top 340ms ease-out-quint, margin-top 340ms ease-out-quint, background 200ms ease;
+  transition: transform 340ms cubic-bezier(0.23, 1, 0.32, 1), top 340ms cubic-bezier(0.23, 1, 0.32, 1), margin-top 340ms cubic-bezier(0.23, 1, 0.32, 1), background 200ms ease;
 }
 
 .menu.active .line.first {

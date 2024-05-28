@@ -1,6 +1,6 @@
 
 import React, { Component } from 'react'
-import style from './style.css'
+import style from './style.module.css'
 import { config } from '../../utils/getConfig'
 import screenSize from '../../utils/screenSize'
 

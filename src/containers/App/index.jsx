@@ -9,9 +9,13 @@ import Header from '../../components/Header'
 
 import config from '../../config'
 import store from '../../store'
+import 'normalize.css'
 import '../../assets/fonts/geomanist.css'
-import style from './style.css'
-import transition from './transition.css'
+import './base.module.css'
+import './scrollbar.module.css'
+import './typography.module.css'
+import style from './style.module.css'
+import transition from './transition.module.css'
 import getPageContent from '../../utils/getPageContent'
 
 import * as DataActions from '../../actions/data'
@@ -68,7 +72,6 @@ class App extends Component {
 
           <Header location={this.props.location} />
           <ReactCSSTransitionGroup
-            transitionName="page"
             component="div"
             transitionName={transitionClasses}
             transitionAppear={true}

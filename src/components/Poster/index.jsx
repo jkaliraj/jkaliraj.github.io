@@ -2,7 +2,7 @@
 import React, { Component } from 'react'
 
 import classnames from 'classnames'
-import style from './style.css'
+import style from './style.module.css'
 import imagepath from '../../utils/imagepath'
 
 import scrollTo from '../../utils/scrollTo'
@@ -25,8 +25,8 @@ class Poster extends Component {
   componentDidMount() {
     this._oldScroll = null
 
-    window.addEventListener('resize', (this._handleResize = ::this.handleResize))
-    window.addEventListener('scroll', (this._handleScroll = ::this.handleScroll))
+    window.addEventListener('resize', (this._handleResize = this.handleResize.bind(this)))
+    window.addEventListener('scroll', (this._handleScroll = this.handleScroll.bind(this)))
 
     this.handleResize()
     this.handleScroll()
@@ -133,7 +133,7 @@ class Poster extends Component {
       return (
         <figure className={className} style={css}>
           <div className={style.image} style={imageCss}>
-            <img src={path} onLoad={::this.getImageSize} />
+            <img src={path} onLoad={this.getImageSize.bind(this)} />
           </div>
           {gradient}
         </figure>

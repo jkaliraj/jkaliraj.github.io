@@ -2,8 +2,8 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router'
 
-import style from './style.css'
-import grid from '../../assets/css/grid.css'
+import style from './style.module.css'
+import grid from '../../assets/css/grid.module.css'
 
 import { rollText } from '../../utils/transformText'
 
@@ -11,7 +11,7 @@ class Links extends Component {
   renderPageItem(link) {
     return (
       <li key={link.id}>
-        <Link to={link.link} target="_blank" onMouseOver={::this.cycle}>
+        <Link to={link.link} target="_blank" onMouseOver={this.cycle.bind(this)}>
           <span className={style.linkText} data-text={link.title}>{link.title}</span>
         </Link>
       </li>
@@ -37,7 +37,7 @@ class Links extends Component {
     return (
       <nav className={style.links}>
         <ul>
-          {links.map(::this.renderPageItem)}
+          {links.map(this.renderPageItem.bind(this))}
         </ul>
       </nav>
     )

@@ -13,8 +13,8 @@ import Footer from '../../components/Footer'
 
 import markdown from '../../utils/markdown'
 import getPageContent from '../../utils/getPageContent'
-import style from './style.css'
-import grid from '../../assets/css/grid.css'
+import style from './style.module.css'
+import grid from '../../assets/css/grid.module.css'
 import scrollTo from '../../utils/scrollTo'
 import setSiteTitle from '../../utils/setSiteTitle'
 
@@ -27,7 +27,7 @@ class Page extends Component {
     setSiteTitle(this.data)
 
     scrollTo(0, 0.75)
-    window.addEventListener('resize', (this._handleResize = ::this.handleResize))
+    window.addEventListener('resize', (this._handleResize = this.handleResize.bind(this)))
     this.handleResize()
 
     setTimeout(() => {
