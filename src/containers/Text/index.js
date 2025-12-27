@@ -16,6 +16,10 @@ class Text extends Component {
 
       for (let i = 0, _len = tmp.length; i < _len; i++) {
         tmp[i].addEventListener('mouseover', this.handleMouseOver)
+        if (tmp[i].href.startsWith('http://') || tmp[i].href.startsWith('https://')) {
+          tmp[i].target = '_blank'
+          tmp[i].rel = 'noopener noreferrer'
+        }
       }
     }
   }

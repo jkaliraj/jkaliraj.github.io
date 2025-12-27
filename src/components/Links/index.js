@@ -1,6 +1,5 @@
 
 import React, { Component } from 'react'
-import { Link } from 'react-router'
 
 import style from './style.css'
 import grid from '../../assets/css/grid.css'
@@ -9,11 +8,20 @@ import { rollText } from '../../utils/transformText'
 
 class Links extends Component {
   renderPageItem(link) {
+    const isExternal = link.link.startsWith('http://') || link.link.startsWith('https://')
+    const linkProps = {
+      href: link.link,
+      onMouseOver: this.cycle.bind(this)
+    }
+    if (isExternal) {
+      linkProps.target = '_blank'
+      linkProps.rel = 'noopener noreferrer'
+    }
     return (
       <li key={link.id}>
-        <Link to={link.link} target="_blank" onMouseOver={::this.cycle}>
+        <a {...linkProps}>
           <span className={style.linkText} data-text={link.title}>{link.title}</span>
-        </Link>
+        </a>
       </li>
     )
   }
@@ -37,7 +45,7 @@ class Links extends Component {
     return (
       <nav className={style.links}>
         <ul>
-          {links.map(::this.renderPageItem)}
+          {links.map(this.renderPageItem.bind(this))}
         </ul>
       </nav>
     )

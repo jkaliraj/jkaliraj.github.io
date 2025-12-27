@@ -69,7 +69,7 @@
                     "content": {
                         "title": "Titan OS",
                         "link": "/projects/titan-os",
-                        "category": "C / Systems",
+                        "category": "C / Kernel",
                         "template": "collection",
                         "preview": "preview",
                         "twocol": false
@@ -79,7 +79,7 @@
                     "localFile": "/assets/projects/titan-os/preview.jpg"
                 },
                 "index": {
-                    "content": "# Titan OS 🪐\n\nA minimal 32-bit x86 operating system built from scratch in C.\n\n- Multiboot-compatible kernel\n- Text-mode VGA hello screen\n- Dockerized build and QEMU run\n- Keyboard input, interrupts, memory management\n\nThis project demonstrates my expertise in low-level systems, OS fundamentals, and modern C development.\n",
+                    "content": "# Titan OS 🪐\n\nA minimal 32-bit x86 kernel built in **C** and **Assembly**.\n\n**Tech Stack:** C, Assembly, Docker, QEMU, GRUB, NASM\n\n- Multiboot-compatible kernel image\n- Text-mode VGA hello screen\n- Keyboard input and interrupt handling\n- Memory management (heap)\n- 64-bit mode support\n\nDemonstrates expertise in low-level systems programming and OS development.\n\n [<img width='64' height='64' src='https://img.icons8.com/glyph-neue/64/FFFFFF/github.png' alt='GitHub'/>](https://github.com/jkaliraj/titan)",
                     "rev": "titan-os-001"
                 },
                 "preview": {
@@ -118,7 +118,7 @@
                     "content": {
                         "title": "HP Device Manager",
                         "link": "/projects/hp-device-manager",
-                        "category": "C / Embedded",
+                        "category": "Flutter",
                         "template": "collection",
                         "preview": "preview",
                         "twocol": false
@@ -128,7 +128,7 @@
                     "localFile": "/assets/projects/hp-device-manager/preview.jpg"
                 },
                 "index": {
-                    "content": "# HP Device Manager\n\nEmbedded firmware for managing HP devices, written in C.\n\n- Device communication protocols\n- Firmware updates over-the-air\n- Power management and diagnostics\n- Integration with HP ecosystem\n\nShowcases my work in embedded systems and device firmware at Hewlett-Packard.\n",
+                    "content": "# HP Device Manager\n\nAn intelligent cross-platform Flutter app revolutionizing HP device management with **AI-powered** features.\n\n**Tech Stack:** Flutter, Dart, Android, iOS, TensorFlow, Machine Learning\n\n- AI-powered printing optimization\n- Smart diagnostics\n- Cross-platform compatibility\n- Modern, intuitive UI\n\nShowcases cutting-edge mobile development with AI integration.\n",
                     "rev": "hp-device-manager-001"
                 },
                 "preview": {
@@ -156,9 +156,9 @@
             "chatting-app-ui": {
                 "config": {
                     "content": {
-                        "title": "Chatting App UI",
+                        "title": "Star Chat",
                         "link": "/projects/chatting-app-ui",
-                        "category": "Python / AI",
+                        "category": "Flutter",
                         "template": "collection",
                         "preview": "preview",
                         "twocol": false
@@ -168,7 +168,7 @@
                     "localFile": "/assets/projects/chatting-app-ui/preview.jpg"
                 },
                 "index": {
-                    "content": "# Chatting App UI\n\nAI-powered chat interface built with Python and machine learning.\n\n- Natural language processing\n- Conversational AI integration\n- User-friendly UI/UX design\n- Real-time messaging features\n\nDemonstrates my skills in AI, Python, and interactive application development.\n",
+                    "content": "# Star Chat\n\nA sleek app designed for seamless communication.\n\n**Tech Stack:** Flutter, Dart, Android, iOS\n\n- Real-time messaging\n- Smooth UI\n- End-to-end encryption\n- Privacy controls\n- Digital wallet\n\nShowcases innovative Flutter development and design.\n\n[<img width='64' height='64' src='https://img.icons8.com/glyph-neue/64/FFFFFF/github.png' alt='GitHub'/>](https://github.com/jkaliraj/star)",
                     "rev": "chatting-app-ui-001"
                 },
                 "preview": {
@@ -196,9 +196,9 @@
             "finance-management-app": {
                 "config": {
                     "content": {
-                        "title": "Finance Management App",
+                        "title": "Comet Finance",
                         "link": "/projects/finance-management-app",
-                        "category": "Python / ML",
+                        "category": "Flutter",
                         "template": "collection",
                         "preview": "preview",
                         "twocol": false
@@ -208,7 +208,7 @@
                     "localFile": "/assets/projects/finance-management-app/preview.jpg"
                 },
                 "index": {
-                    "content": "# Finance Management App\n\nMachine learning-driven finance app for personal budgeting and investment.\n\n- Expense tracking and categorization\n- ML-based spending predictions\n- Investment portfolio analysis\n- Secure data handling\n\nHighlights my expertise in Python, machine learning, and financial software development.\n",
+                    "content": "# Comet Finance\n\nA sleek app for savvy financial management.\n\n**Tech Stack:** Flutter, Dart, Android, iOS\n\n- Budget tracking\n- Transaction management\n- Investment monitoring\n- Flexible account management\n- Secure data handling\n\nShowcases advanced finance app architecture.\n\n[<img width='64' height='64' src='https://img.icons8.com/glyph-neue/64/FFFFFF/github.png' alt='GitHub'/>](https://github.com/jkaliraj/comet)",
                     "rev": "finance-management-app-001"
                 },
                 "preview": {
