@@ -1,4 +1,5 @@
 import store from "../store";
+import getConfig from "./getConfig";
 
 let getPageContent = function (folder) {
   let path = "";
@@ -61,7 +62,7 @@ let getPageContent = function (folder) {
 
 export default function getContent(pathname) {
   let state = store.getState();
-  let folder = { ...state.data.pages[state.data.config.content.index] };
+  let folder = { ...state.data.pages[getConfig().index] };
   let parent = null;
   let currentKey = null;
 
