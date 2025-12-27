@@ -83,7 +83,7 @@ class List extends Component {
       page.preview = page.config.preview && data.children[k].preview
           ? data.children[k].preview.localFile
           : null;
-      pages.unshift(page)
+      pages.push(page)
     }
 
     let classes = classnames(

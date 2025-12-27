@@ -106,8 +106,8 @@ class Collection extends Component {
           width={1900}
           images={lightboxImages}
           isOpen={this.state.lightboxIsOpen}
-          onClickPrev={::this.gotoPrevious}
-          onClickNext={::this.gotoNext}
+          onClickPrev={::this.gotoNext}
+          onClickNext={::this.gotoPrevious}
           onClose={::this.closeLightbox}
           backdropClosesModal={true} />
       </section>

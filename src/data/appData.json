@@ -1,0 +1,252 @@
+{
+    "config": {
+        "content": {}
+    },
+    "pages": {
+        "home": {
+            "config": {
+                "content": {
+                    "title": "Home",
+                    "link": "/",
+                    "navigation": true,
+                    "template": "home",
+                    "inverse": false,
+                    "poster_fade": 0.8,
+                    "poster_image_opacity": 0.5,
+                    "poster_title_fade": 0.5
+                }
+            },
+            "index": {
+                "content": "<div style=\"text-align: center\">\n<img src=\"https://placehold.co/394x394/b3a577/181818?text=KR\" style=\"border-radius: 50%; width: 394px; height: 394px;\">\n</div>\n\n<br />\n\n👋 Hey, I am __Kaliraj__,  \na passionate **software engineer** who dives deep into **C, C++**, and **Python**, building **low-level systems** and **firmware** that quietly power real-world products at **Hewlett-Packard**. I spend my days untangling tricky bugs, squeezing performance from hardware, and exploring how **AI** and **machine learning** can elevate software intelligence.\n\nI’ve played with countless tech stacks, frameworks, and tools — from hardcore system programming to experimenting with intelligent systems. Whether it’s crafting **firmware magic**, optimizing systems, or building **AI-driven tools**, I love the thrill of turning complex problems into clean, reliable solutions.\n\nOutside of code, I’m endlessly curious — always learning, exploring, and pushing the boundaries of what systems and software can do.\n\nIf you want to collaborate or just say hi, feel free to [drop me a line](mailto:kaliraj.jeganathan@gmail.com).\n\n**Stay bold &**\n",
+                "rev": "home-001"
+            }
+        },
+        "about": {
+            "config": {
+                "content": {
+                    "title": "About",
+                    "link": "/about",
+                    "navigation": true,
+                    "template": "page",
+                    "poster_height": 90,
+                    "poster_scale": 0,
+                    "poster_parallax": 0.5,
+                    "poster_move": 0,
+                    "poster_blur": 0.1,
+                    "poster_fixed": true,
+                    "poster_title_move": 0,
+                    "poster_vignette": true,
+                    "poster_gradient": true,
+                    "poster_fade": 1,
+                    "poster_image_opacity": 1,
+                    "poster_title_fade": 0
+                }
+            },
+            "poster": {
+                "localFile": "/assets/images/banner.jpg"
+            },
+            "index": {
+                "content": "# About\n\nI grew up in India, always passionate about technology and how things work.\n\nMy journey began with **C** and **C++**, writing code to control hardware and debug circuits. That spark led me to a career where software meets silicon, and where I now blend **embedded engineering** with **AI** and **machine learning** to push the boundaries of what systems can do.\n\nToday, I’m at **Hewlett-Packard**, building **low-level systems** and **firmware** that quietly power next-generation technology platforms.\n\nIf you want to chat about systems, AI, or just share a good story, [let’s connect](mailto:kaliraj.jeganathan@gmail.com).\n",
+                "rev": "about-001"
+            }
+        },
+        "projects": {
+            "config": {
+                "content": {
+                    "title": "Projects",
+                    "link": "/projects",
+                    "navigation": true,
+                    "template": "list",
+                    "twocol": false
+                }
+            },
+            "index": {
+                "content": "",
+                "rev": "projects-001"
+            },
+            "titan-os": {
+                "config": {
+                    "content": {
+                        "title": "Titan OS",
+                        "link": "/projects/titan-os",
+                        "category": "C / Systems",
+                        "template": "collection",
+                        "preview": "preview",
+                        "twocol": false
+                    }
+                },
+                "poster": {
+                    "localFile": "/assets/projects/titan-os/preview.jpg"
+                },
+                "index": {
+                    "content": "# Titan OS 🪐\n\nA minimal 32-bit x86 operating system built from scratch in C.\n\n- Multiboot-compatible kernel\n- Text-mode VGA hello screen\n- Dockerized build and QEMU run\n- Keyboard input, interrupts, memory management\n\nThis project demonstrates my expertise in low-level systems, OS fundamentals, and modern C development.\n",
+                    "rev": "titan-os-001"
+                },
+                "preview": {
+                    "localFile": "/assets/projects/titan-os/preview.jpg"
+                },
+                "1.jpg": {
+                    "tag": "file",
+                    "name": "1.jpg",
+                    "localFile": "/assets/projects/titan-os/1.jpg",
+                    "lpath": "/assets/projects/titan-os/1.jpg",
+                    "width": 800,
+                    "height": 600,
+                    "rev": "1-001"
+                },
+                "2.jpg": {
+                    "tag": "file",
+                    "name": "2.jpg",
+                    "localFile": "/assets/projects/titan-os/2.jpg",
+                    "lpath": "/assets/projects/titan-os/2.jpg",
+                    "width": 800,
+                    "height": 600,
+                    "rev": "2-001"
+                },
+                "3.jpg": {
+                    "tag": "file",
+                    "name": "3.jpg",
+                    "localFile": "/assets/projects/titan-os/3.jpg",
+                    "lpath": "/assets/projects/titan-os/3.jpg",
+                    "width": 800,
+                    "height": 600,
+                    "rev": "3-001"
+                }
+            },
+            "hp-device-manager": {
+                "config": {
+                    "content": {
+                        "title": "HP Device Manager",
+                        "link": "/projects/hp-device-manager",
+                        "category": "C / Embedded",
+                        "template": "collection",
+                        "preview": "preview",
+                        "twocol": false
+                    }
+                },
+                "poster": {
+                    "localFile": "/assets/projects/hp-device-manager/preview.jpg"
+                },
+                "index": {
+                    "content": "# HP Device Manager\n\nEmbedded firmware for managing HP devices, written in C.\n\n- Device communication protocols\n- Firmware updates over-the-air\n- Power management and diagnostics\n- Integration with HP ecosystem\n\nShowcases my work in embedded systems and device firmware at Hewlett-Packard.\n",
+                    "rev": "hp-device-manager-001"
+                },
+                "preview": {
+                    "localFile": "/assets/projects/hp-device-manager/preview.jpg"
+                },
+                "1.jpg": {
+                    "tag": "file",
+                    "name": "1.jpg",
+                    "localFile": "/assets/projects/hp-device-manager/1.jpg",
+                    "lpath": "/assets/projects/hp-device-manager/1.jpg",
+                    "width": 800,
+                    "height": 600,
+                    "rev": "hp-1-001"
+                },
+                "2.jpg": {
+                    "tag": "file",
+                    "name": "2.jpg",
+                    "localFile": "/assets/projects/hp-device-manager/2.jpg",
+                    "lpath": "/assets/projects/hp-device-manager/2.jpg",
+                    "width": 800,
+                    "height": 600,
+                    "rev": "hp-2-001"
+                }
+            },
+            "chatting-app-ui": {
+                "config": {
+                    "content": {
+                        "title": "Chatting App UI",
+                        "link": "/projects/chatting-app-ui",
+                        "category": "Python / AI",
+                        "template": "collection",
+                        "preview": "preview",
+                        "twocol": false
+                    }
+                },
+                "poster": {
+                    "localFile": "/assets/projects/chatting-app-ui/preview.jpg"
+                },
+                "index": {
+                    "content": "# Chatting App UI\n\nAI-powered chat interface built with Python and machine learning.\n\n- Natural language processing\n- Conversational AI integration\n- User-friendly UI/UX design\n- Real-time messaging features\n\nDemonstrates my skills in AI, Python, and interactive application development.\n",
+                    "rev": "chatting-app-ui-001"
+                },
+                "preview": {
+                    "localFile": "/assets/projects/chatting-app-ui/preview.jpg"
+                },
+                "1.jpg": {
+                    "tag": "file",
+                    "name": "1.jpg",
+                    "localFile": "/assets/projects/chatting-app-ui/1.jpg",
+                    "lpath": "/assets/projects/chatting-app-ui/1.jpg",
+                    "width": 800,
+                    "height": 600,
+                    "rev": "chat-1-001"
+                },
+                "2.jpg": {
+                    "tag": "file",
+                    "name": "2.jpg",
+                    "localFile": "/assets/projects/chatting-app-ui/2.jpg",
+                    "lpath": "/assets/projects/chatting-app-ui/2.jpg",
+                    "width": 800,
+                    "height": 600,
+                    "rev": "chat-2-001"
+                }
+            },
+            "finance-management-app": {
+                "config": {
+                    "content": {
+                        "title": "Finance Management App",
+                        "link": "/projects/finance-management-app",
+                        "category": "Python / ML",
+                        "template": "collection",
+                        "preview": "preview",
+                        "twocol": false
+                    }
+                },
+                "poster": {
+                    "localFile": "/assets/projects/finance-management-app/preview.jpg"
+                },
+                "index": {
+                    "content": "# Finance Management App\n\nMachine learning-driven finance app for personal budgeting and investment.\n\n- Expense tracking and categorization\n- ML-based spending predictions\n- Investment portfolio analysis\n- Secure data handling\n\nHighlights my expertise in Python, machine learning, and financial software development.\n",
+                    "rev": "finance-management-app-001"
+                },
+                "preview": {
+                    "localFile": "/assets/projects/finance-management-app/preview.jpg"
+                },
+                "1.jpg": {
+                    "tag": "file",
+                    "name": "1.jpg",
+                    "localFile": "/assets/projects/finance-management-app/1.jpg",
+                    "lpath": "/assets/projects/finance-management-app/1.jpg",
+                    "width": 800,
+                    "height": 600,
+                    "rev": "finance-1-001"
+                },
+                "2.jpg": {
+                    "tag": "file",
+                    "name": "2.jpg",
+                    "localFile": "/assets/projects/finance-management-app/2.jpg",
+                    "lpath": "/assets/projects/finance-management-app/2.jpg",
+                    "width": 800,
+                    "height": 600,
+                    "rev": "finance-2-001"
+                }
+            }
+        },
+        "contact": {
+            "config": {
+                "content": {
+                    "title": "Contact",
+                    "link": "/contact",
+                    "navigation": true,
+                    "template": "contact"
+                }
+            },
+            "index": {
+                "content": "# LET'S CONNECT!\n\n__Crafting AI-powered solutions.  \nReady to build the future.__\n\n[kaliraj.jeganathan@gmail.com](mailto:kaliraj.jeganathan@gmail.com)\n",
+                "rev": "contact-001"
+            }
+        }
+    }
+}
