@@ -133,7 +133,7 @@ class Poster extends Component {
       return (
         <figure className={className} style={css}>
           <div className={style.image} style={imageCss}>
-            <img src={path} onLoad={::this.getImageSize} />
+            <img src={path} onLoad={this.getImageSize.bind(this)} />
           </div>
           {gradient}
         </figure>

@@ -45,7 +45,7 @@ class Header extends Component {
     if (config.logo) {
       logo = (
         <div className={style.logoWrap}>
-          <img src={config.logo} width={64} height={64} alt="Logo" />
+          <img src={config.logo} width={64} height={64} alt="KR" />
         </div>
       );
     }

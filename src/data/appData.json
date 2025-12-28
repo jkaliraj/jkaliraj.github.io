@@ -17,7 +17,7 @@
                 }
             },
             "index": {
-                "content": "<div style=\"text-align: center\">\n<img src=\"https://placehold.co/394x394/b3a577/181818?text=KR\" style=\"border-radius: 50%; width: 394px; height: 394px;\">\n</div>\n\n<br />\n\n👋 Hey, I am __Kaliraj__,  \na passionate **software engineer** who dives deep into **C, C++**, and **Python**, building **low-level systems** and **firmware** that quietly power real-world products at **Hewlett-Packard**. I spend my days untangling tricky bugs, squeezing performance from hardware, and exploring how **AI** and **machine learning** can elevate software intelligence.\n\nI’ve played with countless tech stacks, frameworks, and tools — from hardcore system programming to experimenting with intelligent systems. Whether it’s crafting **firmware magic**, optimizing systems, or building **AI-driven tools**, I love the thrill of turning complex problems into clean, reliable solutions.\n\nOutside of code, I’m endlessly curious — always learning, exploring, and pushing the boundaries of what systems and software can do.\n\nIf you want to collaborate or just say hi, feel free to [drop me a line](mailto:kaliraj.jeganathan@gmail.com).\n\n**Stay bold &**\n",
+                "content": "<div style=\"text-align: center\">\n<img src=\"/assets/images/profile.png\" style=\"border-radius: 50%; width: 394px; height: 394px;\">\n</div>\n\n<br />\n\n👋 Hey, I am __Kaliraj__,  \na passionate **software engineer** who dives deep into **C, C++**, and **Python**, building **low-level systems** and **firmware** that quietly power real-world products at **Hewlett-Packard**. I spend my days untangling tricky bugs, squeezing performance from hardware, and exploring how **AI** and **machine learning** can elevate software intelligence.\n\nI’ve played with countless tech stacks, frameworks, and tools — from hardcore system programming to experimenting with intelligent systems. Whether it’s crafting **firmware magic**, optimizing systems, or building **AI-driven tools**, I love the thrill of turning complex problems into clean, reliable solutions.\n\nOutside of code, I’m endlessly curious — always learning, exploring, and pushing the boundaries of what systems and software can do.\n\nIf you want to collaborate or just say hi, feel free to [drop me a line](mailto:kaliraj.jeganathan@gmail.com).\n\n**Stay bold &**\n",
                 "rev": "home-001"
             }
         },
@@ -71,166 +71,229 @@
                         "link": "/projects/titan-os",
                         "category": "C / Kernel",
                         "template": "collection",
-                        "preview": "preview",
-                        "twocol": false
+                        "twocol": false,
+                        "poster_parallax": 0,
+                        "links": {
+                            "github": "https://github.com/jkaliraj/titan"
+                        }
                     }
                 },
-                "poster": {
-                    "localFile": "/assets/projects/titan-os/preview.jpg"
-                },
                 "index": {
-                    "content": "# Titan OS 🪐\n\nA minimal 32-bit x86 kernel built in **C** and **Assembly**.\n\n**Tech Stack:** C, Assembly, Docker, QEMU, GRUB, NASM\n\n- Multiboot-compatible kernel image\n- Text-mode VGA hello screen\n- Keyboard input and interrupt handling\n- Memory management (heap)\n- 64-bit mode support\n\nDemonstrates expertise in low-level systems programming and OS development.\n\n [<img width='64' height='64' src='https://img.icons8.com/glyph-neue/64/FFFFFF/github.png' alt='GitHub'/>](https://github.com/jkaliraj/titan)",
+                    "content": "# Titan OS 🪐\n\nA minimal 32-bit x86 kernel built in **C** and **Assembly**.\n\n**Tech Stack:** C, Assembly, Docker, QEMU, GRUB, NASM\n\n- Multiboot-compatible kernel image\n- Text-mode VGA hello screen\n- Keyboard input and interrupt handling\n- Memory management (heap)\n- 64-bit mode support\n\nDemonstrates expertise in low-level systems programming and OS development.\n",
                     "rev": "titan-os-001"
-                },
-                "preview": {
-                    "localFile": "/assets/projects/titan-os/preview.jpg"
-                },
-                "1.jpg": {
-                    "tag": "file",
-                    "name": "1.jpg",
-                    "localFile": "/assets/projects/titan-os/1.jpg",
-                    "lpath": "/assets/projects/titan-os/1.jpg",
-                    "width": 800,
-                    "height": 600,
-                    "rev": "1-001"
-                },
-                "2.jpg": {
-                    "tag": "file",
-                    "name": "2.jpg",
-                    "localFile": "/assets/projects/titan-os/2.jpg",
-                    "lpath": "/assets/projects/titan-os/2.jpg",
-                    "width": 800,
-                    "height": 600,
-                    "rev": "2-001"
-                },
-                "3.jpg": {
-                    "tag": "file",
-                    "name": "3.jpg",
-                    "localFile": "/assets/projects/titan-os/3.jpg",
-                    "lpath": "/assets/projects/titan-os/3.jpg",
-                    "width": 800,
-                    "height": 600,
-                    "rev": "3-001"
                 }
             },
-            "hp-device-manager": {
+            "hp-atlas": {
                 "config": {
                     "content": {
-                        "title": "HP Device Manager",
-                        "link": "/projects/hp-device-manager",
+                        "title": "HP Atlas",
+                        "link": "/projects/hp-atlas",
                         "category": "Flutter",
                         "template": "collection",
                         "preview": "preview",
-                        "twocol": false
+                        "twocol": false,
+                        "poster_parallax": 0,
+                        "links": {
+                            "github": "https://github.com/jkaliraj/hp-atlas"
+                        }
                     }
                 },
                 "poster": {
-                    "localFile": "/assets/projects/hp-device-manager/preview.jpg"
+                    "localFile": "/assets/projects/hp-atlas/preview.png"
                 },
                 "index": {
-                    "content": "# HP Device Manager\n\nAn intelligent cross-platform Flutter app revolutionizing HP device management with **AI-powered** features.\n\n**Tech Stack:** Flutter, Dart, Android, iOS, TensorFlow, Machine Learning\n\n- AI-powered printing optimization\n- Smart diagnostics\n- Cross-platform compatibility\n- Modern, intuitive UI\n\nShowcases cutting-edge mobile development with AI integration.\n",
-                    "rev": "hp-device-manager-001"
+                    "content": "# HP Atlas\n\nAn intelligent cross-platform Flutter app revolutionizing HP device management with **AI-powered** features.\n\n**Tech Stack:** Flutter, Dart, Android, iOS, TensorFlow, Machine Learning\n\n- AI-powered printing optimization\n- Smart diagnostics\n- Cross-platform compatibility\n- Modern, intuitive UI\n\nShowcases cutting-edge mobile development with AI integration.\n",
+                    "rev": "hp-atlas-001"
                 },
                 "preview": {
-                    "localFile": "/assets/projects/hp-device-manager/preview.jpg"
+                    "localFile": "/assets/projects/hp-atlas/preview.png"
                 },
-                "1.jpg": {
+                "1.png": {
                     "tag": "file",
-                    "name": "1.jpg",
-                    "localFile": "/assets/projects/hp-device-manager/1.jpg",
-                    "lpath": "/assets/projects/hp-device-manager/1.jpg",
+                    "name": "1.png",
+                    "localFile": "/assets/projects/hp-atlas/1.png",
+                    "lpath": "/assets/projects/hp-atlas/1.png",
                     "width": 800,
                     "height": 600,
-                    "rev": "hp-1-001"
+                    "rev": "atlas-1-001"
                 },
-                "2.jpg": {
+                "2.png": {
                     "tag": "file",
-                    "name": "2.jpg",
-                    "localFile": "/assets/projects/hp-device-manager/2.jpg",
-                    "lpath": "/assets/projects/hp-device-manager/2.jpg",
+                    "name": "2.png",
+                    "localFile": "/assets/projects/hp-atlas/2.png",
+                    "lpath": "/assets/projects/hp-atlas/2.png",
                     "width": 800,
                     "height": 600,
-                    "rev": "hp-2-001"
+                    "rev": "atlas-2-001"
+                },
+                "3.png": {
+                    "tag": "file",
+                    "name": "3.png",
+                    "localFile": "/assets/projects/hp-atlas/3.png",
+                    "lpath": "/assets/projects/hp-atlas/3.png",
+                    "width": 800,
+                    "height": 600,
+                    "rev": "atlas-3-001"
+                },
+                "4.png": {
+                    "tag": "file",
+                    "name": "4.png",
+                    "localFile": "/assets/projects/hp-atlas/4.png",
+                    "lpath": "/assets/projects/hp-atlas/4.png",
+                    "width": 800,
+                    "height": 600,
+                    "rev": "atlas-4-001"
+                },
+                "5.png": {
+                    "tag": "file",
+                    "name": "5.png",
+                    "localFile": "/assets/projects/hp-atlas/5.png",
+                    "lpath": "/assets/projects/hp-atlas/5.png",
+                    "width": 800,
+                    "height": 600,
+                    "rev": "atlas-5-001"
                 }
             },
-            "chatting-app-ui": {
+            "star": {
                 "config": {
                     "content": {
                         "title": "Star Chat",
-                        "link": "/projects/chatting-app-ui",
+                        "link": "/projects/star",
                         "category": "Flutter",
                         "template": "collection",
                         "preview": "preview",
-                        "twocol": false
+                        "twocol": false,
+                        "poster_parallax": 0,
+                        "links": {
+                            "github": "https://github.com/jkaliraj/star"
+                        }
                     }
                 },
                 "poster": {
-                    "localFile": "/assets/projects/chatting-app-ui/preview.jpg"
+                    "localFile": "/assets/projects/star/preview.png"
                 },
                 "index": {
-                    "content": "# Star Chat\n\nA sleek app designed for seamless communication.\n\n**Tech Stack:** Flutter, Dart, Android, iOS\n\n- Real-time messaging\n- Smooth UI\n- End-to-end encryption\n- Privacy controls\n- Digital wallet\n\nShowcases innovative Flutter development and design.\n\n[<img width='64' height='64' src='https://img.icons8.com/glyph-neue/64/FFFFFF/github.png' alt='GitHub'/>](https://github.com/jkaliraj/star)",
-                    "rev": "chatting-app-ui-001"
+                    "content": "# Star Chat\n\nA sleek app designed for seamless communication.\n\n**Tech Stack:** Flutter, Dart, Android, iOS\n\n- Real-time messaging\n- Smooth UI\n- End-to-end encryption\n- Privacy controls\n- Digital wallet\n\nShowcases innovative Flutter development and design.",
+                    "rev": "star-001"
                 },
                 "preview": {
-                    "localFile": "/assets/projects/chatting-app-ui/preview.jpg"
+                    "localFile": "/assets/projects/star/preview.png"
                 },
-                "1.jpg": {
+                "1.png": {
                     "tag": "file",
-                    "name": "1.jpg",
-                    "localFile": "/assets/projects/chatting-app-ui/1.jpg",
-                    "lpath": "/assets/projects/chatting-app-ui/1.jpg",
+                    "name": "1.png",
+                    "localFile": "/assets/projects/star/1.png",
+                    "lpath": "/assets/projects/star/1.png",
                     "width": 800,
                     "height": 600,
-                    "rev": "chat-1-001"
+                    "rev": "star-1-001"
                 },
-                "2.jpg": {
+                "2.png": {
                     "tag": "file",
-                    "name": "2.jpg",
-                    "localFile": "/assets/projects/chatting-app-ui/2.jpg",
-                    "lpath": "/assets/projects/chatting-app-ui/2.jpg",
+                    "name": "2.png",
+                    "localFile": "/assets/projects/star/2.png",
+                    "lpath": "/assets/projects/star/2.png",
                     "width": 800,
                     "height": 600,
-                    "rev": "chat-2-001"
+                    "rev": "star-2-001"
+                },
+                "3.png": {
+                    "tag": "file",
+                    "name": "3.png",
+                    "localFile": "/assets/projects/star/3.png",
+                    "lpath": "/assets/projects/star/3.png",
+                    "width": 800,
+                    "height": 600,
+                    "rev": "star-3-001"
+                },
+                "4.png": {
+                    "tag": "file",
+                    "name": "4.png",
+                    "localFile": "/assets/projects/star/4.png",
+                    "lpath": "/assets/projects/star/4.png",
+                    "width": 800,
+                    "height": 600,
+                    "rev": "star-4-001"
+                },
+                "5.png": {
+                    "tag": "file",
+                    "name": "5.png",
+                    "localFile": "/assets/projects/star/5.png",
+                    "lpath": "/assets/projects/star/5.png",
+                    "width": 800,
+                    "height": 600,
+                    "rev": "star-5-001"
                 }
             },
-            "finance-management-app": {
+            "comet": {
                 "config": {
                     "content": {
                         "title": "Comet Finance",
-                        "link": "/projects/finance-management-app",
+                        "link": "/projects/comet",
                         "category": "Flutter",
                         "template": "collection",
                         "preview": "preview",
-                        "twocol": false
+                        "twocol": false,
+                        "poster_parallax": 0,
+                        "links": {
+                            "github": "https://github.com/jkaliraj/comet"
+                        }
                     }
                 },
-                "poster": {
-                    "localFile": "/assets/projects/finance-management-app/preview.jpg"
-                },
                 "index": {
-                    "content": "# Comet Finance\n\nA sleek app for savvy financial management.\n\n**Tech Stack:** Flutter, Dart, Android, iOS\n\n- Budget tracking\n- Transaction management\n- Investment monitoring\n- Flexible account management\n- Secure data handling\n\nShowcases advanced finance app architecture.\n\n[<img width='64' height='64' src='https://img.icons8.com/glyph-neue/64/FFFFFF/github.png' alt='GitHub'/>](https://github.com/jkaliraj/comet)",
-                    "rev": "finance-management-app-001"
+                    "content": "# Comet Finance\n\nA sleek app for savvy financial management.\n\n**Tech Stack:** Flutter, Dart, Android, iOS\n\n- Budget tracking\n- Transaction management\n- Investment monitoring\n- Flexible account management\n- Secure data handling\n\nShowcases advanced finance app architecture.",
+                    "rev": "comet-001"
+                },
+                "poster": {
+                    "localFile": "/assets/projects/comet/preview.png"
                 },
                 "preview": {
-                    "localFile": "/assets/projects/finance-management-app/preview.jpg"
+                    "localFile": "/assets/projects/comet/preview.png"
                 },
-                "1.jpg": {
+                "1.png": {
                     "tag": "file",
-                    "name": "1.jpg",
-                    "localFile": "/assets/projects/finance-management-app/1.jpg",
-                    "lpath": "/assets/projects/finance-management-app/1.jpg",
+                    "name": "1.png",
+                    "localFile": "/assets/projects/comet/1.png",
+                    "lpath": "/assets/projects/comet/1.png",
                     "width": 800,
                     "height": 600,
                     "rev": "finance-1-001"
                 },
-                "2.jpg": {
+                "2.png": {
                     "tag": "file",
-                    "name": "2.jpg",
-                    "localFile": "/assets/projects/finance-management-app/2.jpg",
-                    "lpath": "/assets/projects/finance-management-app/2.jpg",
+                    "name": "2.png",
+                    "localFile": "/assets/projects/comet/2.png",
+                    "lpath": "/assets/projects/comet/2.png",
                     "width": 800,
                     "height": 600,
                     "rev": "finance-2-001"
+                },
+                "3.png": {
+                    "tag": "file",
+                    "name": "3.png",
+                    "localFile": "/assets/projects/comet/3.png",
+                    "lpath": "/assets/projects/comet/3.png",
+                    "width": 800,
+                    "height": 600,
+                    "rev": "comet-3-001"
+                },
+                "4.png": {
+                    "tag": "file",
+                    "name": "4.png",
+                    "localFile": "/assets/projects/comet/4.png",
+                    "lpath": "/assets/projects/comet/4.png",
+                    "width": 800,
+                    "height": 600,
+                    "rev": "comet-4-001"
+                },
+                "5.png": {
+                    "tag": "file",
+                    "name": "5.png",
+                    "localFile": "/assets/projects/comet/5.png",
+                    "lpath": "/assets/projects/comet/5.png",
+                    "width": 800,
+                    "height": 600,
+                    "rev": "comet-5-001"
                 }
             }
         },
