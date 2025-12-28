@@ -8,7 +8,7 @@
   "scripts": {
     "start": "webpack-dev-server -d --history-api-fallback --hot --inline --progress --colors --port 3000",
     "build": "cross-env NODE_ENV=production webpack --bail --progress --colors",
-    "postbuild": "shx cp -r src/assets dist/assets && shx cp dist/index.html dist/404.html && shx touch dist/.nojekyll",
+    "postbuild": "shx rm -rf dist/assets && shx cp -r src/assets dist/assets && shx cp dist/index.html dist/404.html && shx touch dist/.nojekyll",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
