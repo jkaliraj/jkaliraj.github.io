@@ -1,6 +1,5 @@
 
 import React, { Component } from 'react'
-import { Link } from 'react-router'
 
 import classnames from 'classnames'
 
@@ -27,25 +26,25 @@ class Collection extends Component {
     loadedCount: 0
   };
 
-  renderImage(image) {
+  renderImage = (image) => {
     return (
       <Item
-        onReady={::this.nextImage}
+        onReady={this.nextImage}
         data-index={image.index}
         key={image.id}
         image={image}
         data={this.props.data}
-        onClick={::this.openLightbox} />
+        onClick={this.openLightbox} />
     )
   }
 
-  nextImage() {
+  nextImage = () => {
     this.setState({
       loadedCount: this.state.loadedCount + 1
     })
   }
 
-  openLightbox(event) {
+  openLightbox = (event) => {
     let index = parseFloat(event.currentTarget.getAttribute('data-index'))
 
     this.setState({
@@ -54,20 +53,20 @@ class Collection extends Component {
     })
   }
 
-  closeLightbox() {
+  closeLightbox = () => {
     this.setState({
       currentImage: 0,
       lightboxIsOpen: false
     })
   }
 
-  gotoPrevious() {
+  gotoPrevious = () => {
     this.setState({
       currentImage: this.state.currentImage - 1,
     })
   }
 
-  gotoNext() {
+  gotoNext = () => {
     this.setState({
       currentImage: this.state.currentImage + 1,
     })
@@ -98,7 +97,7 @@ class Collection extends Component {
         <Text data={data} />
         <div className={classnames(grid.container, grid.shortContainer, style.collectionInner)}>
           <Masonry className={style.masonry} options={masonryOptions}>
-            {images.map(::this.renderImage)}
+            {images.map(this.renderImage)}
           </Masonry>
         </div>
         <Lightbox
@@ -106,9 +105,9 @@ class Collection extends Component {
           width={1900}
           images={lightboxImages}
           isOpen={this.state.lightboxIsOpen}
-          onClickPrev={::this.gotoNext}
-          onClickNext={::this.gotoPrevious}
-          onClose={::this.closeLightbox}
+          onClickPrev={this.gotoPrevious}
+          onClickNext={this.gotoNext}
+          onClose={this.closeLightbox}
           backdropClosesModal={true} />
       </section>
     )
