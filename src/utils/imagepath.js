@@ -14,7 +14,8 @@ export function fetch(url, fromCurrentPath) {
 
   // If it's an absolute path starting with '/', return it as-is
   if (url && url.startsWith('/')) {
-    return url
+    const PUBLIC_PATH = (typeof __PUBLIC_PATH__ !== 'undefined' ? __PUBLIC_PATH__ : '/').replace(/\/+$/, '')
+    return PUBLIC_PATH === '' ? url : PUBLIC_PATH + url
   }
 
   let state = store.getState()

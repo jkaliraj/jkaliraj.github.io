@@ -2,11 +2,15 @@
   "name": "portfolio-template",
   "version": "1.0.0",
   "private": true,
+  "homepage": "https://jkaliraj.github.io",
   "description": "Portfolio Template with Animations and Navigation",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server -d --history-api-fallback --hot --inline --progress --colors --port 3000",
-    "build": "NODE_ENV=production webpack --bail --progress --colors"
+    "build": "cross-env NODE_ENV=production webpack --bail --progress --colors",
+    "postbuild": "shx cp -r src/assets dist/assets && shx cp dist/index.html dist/404.html && shx touch dist/.nojekyll",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "license": "MIT",
   "devDependencies": {
@@ -18,9 +22,11 @@
     "babel-preset-stage-0": "^6.22.0",
     "babel-runtime": "^6.23.0",
     "classnames": "^2.2.5",
+    "cross-env": "^10.1.0",
     "css-loader": "^0.26.2",
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.10.1",
+    "gh-pages": "^6.3.0",
     "gsap": "^1.19.1",
     "json-loader": "^0.5.4",
     "normalize.css": "^5.0.0",
@@ -40,6 +46,7 @@
     "redux-actions": "^0.9.0",
     "redux-promise": "^0.5.1",
     "rucksack-css": "^0.9.1",
+    "shx": "^0.4.0",
     "style-loader": "^0.13.2",
     "superb": "^1.2.0",
     "url-loader": "^0.5.8",

@@ -2,6 +2,7 @@ var rucksack = require("rucksack-css");
 var webpack = require("webpack");
 var path = require("path");
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
+var pkg = require("./package.json");
 
 module.exports = {
   context: path.join(__dirname, "./src"),
@@ -13,6 +14,7 @@ module.exports = {
   output: {
     path: path.join(__dirname, "./dist"),
     filename: "build.js",
+    publicPath: process.env.PUBLIC_PATH || (pkg.homepage ? pkg.homepage.replace(/https?:\/\/[^\/]+/, '') : '/'),
   },
   module: {
     loaders: [
@@ -71,6 +73,9 @@ module.exports = {
       "process.env": {
         NODE_ENV: JSON.stringify(process.env.NODE_ENV || "development"),
       },
+      __PUBLIC_PATH__: JSON.stringify(
+        process.env.PUBLIC_PATH || (pkg.homepage ? pkg.homepage.replace(/https?:\/\/[^\/]+/, '') : '/')
+      ),
     }),
     new ExtractTextPlugin("build.css"),
   ],
